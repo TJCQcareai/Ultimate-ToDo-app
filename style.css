@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-section select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.bulk-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input,
+.input-section select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.input-section input[type="text"] {
+  flex: 2;
+}
+
+.sort-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+li.priority-high { background-color: #ffe6e6; }
+li.priority-medium { background-color: #fff3e6; }
+li.priority-low { background-color: #f0f7f0; }
+
+li.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.todo-meta {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.tag {
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  color: white;
+}
+
+.tag.work { background-color: #007bff; }
+.tag.personal { background-color: #6f42c1; }
+.tag.shopping { background-color: #28a745; }
+
+.delete-btn {
+  background-color: #ff4444;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.overdue {
+  color: #dc3545;
+  font-weight: bold;
+}
